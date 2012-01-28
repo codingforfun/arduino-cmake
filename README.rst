@@ -276,7 +276,7 @@ Serial Terminal
 _______________
 To enable serial terminal, add the ``_SERIAL`` setting (``@INPUT_PORT@`` will be replaced with the ``blink_PORT`` setting)::
 
-    set(blink_PORT picocom @INPUT_PORT@ -b 9600 -l)
+    set(blink_SERIAL picocom @INPUT_PORT@ -b 9600 -l)
 
 This will create a target named ``${TARGET_NAME}-serial`` (in this example: blink-serial).
 
